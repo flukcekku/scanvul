@@ -231,7 +231,7 @@ app.get("/scanvul", async (req, res) => {
 
   try {
     const pythonProcess = spawn("python", [
-      __dirname + "./public/python/runzap.py",
+      __dirname , 'public' , 'python' , 'runzap.py',
       url,
     ]);
     let pythonResult = "";
